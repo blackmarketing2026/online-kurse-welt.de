@@ -1,100 +1,269 @@
-# SEO-Produktseite: wiederverwendbare Briefing-Vorlage
+# SEO-Produktseite: Briefing-Vorlage
 
-Diese Vorlage wird **vor jeder neuen Produktseite einmal ausgefüllt**. Sie ist produktunabhängig. Fakten und eigene Bewertungen bleiben getrennt, damit die spätere SEO-Seite belastbar und nützlich wird.
+Diese Vorlage wird **vor jeder neuen Produktseite einmal vollständig ausgefüllt** und als eigene Datei unter `produkt-briefings/<seitenpfad>.md` gespeichert. Erst danach wird die HTML-Seite gebaut.
 
-## 1. Website und SEO-MD-Regeln
+Texte und Produktbild folgen der Methode von **Eugene M. Schwartz** („Breakthrough Advertising“): Wir erzeugen keinen Wunsch, sondern greifen einen bereits vorhandenen Wunsch der Zielgruppe auf und lenken ihn auf das Produkt. Dabei gilt immer: **Schwartz bestimmt Reihenfolge, Blickwinkel und Formulierung, aber niemals die Fakten.** Jede Aussage muss belegt sein. Keine erfundenen Ergebnisse, Bewertungen, Knappheit oder Garantien.
+
+**Ablauf:** 1. Fakten sammeln → 2. Preis und Link mit Campaign Key festlegen → 3. Suchintention klären → 4. Schwartz-Analyse → 5. Produktbild planen → 6. Seitentexte nach dem Seitenaufbau schreiben → 7. FAQ → 8. Freigabe-Check.
+
+---
+
+## 1. Stammdaten
 
 | Angabe | Eintrag |
 |---|---|
-| Zieldomain und geplanter Seitenpfad | [eintragen] |
-| Datei/Link zu den verbindlichen SEO-MD-Regeln | [eintragen] |
-| Sprache, Zielland und Zielgruppe der Website | [eintragen] |
-| Themenbereich der Website und passende Kategorie | [eintragen] |
-| Bestehende ähnliche Seiten (gegen doppelte Suchintention prüfen) | [Links eintragen] |
-| Formatvorgaben: Frontmatter, Überschriften, Bilder, interne Links, CTA | [eintragen oder auf Regeldatei verweisen] |
-| Verantwortliche Person für fachliche Prüfung und Freigabe | [eintragen] |
+| Produktname (exakt wie beim Anbieter) | [eintragen] |
+| Anbieter / Verkäufer | [eintragen] |
+| Seitenpfad (Kleinbuchstaben, Bindestriche, Hauptkeyword) | `[kurzname].html` |
+| Kategorie auf der Website | Business & Marketing · Persönliche Entwicklung · Gesundheit & Fitness · Kreativität · [andere] |
+| Sprache des Produkts | [eintragen; Quelle] |
+| Status in `Produktliste.md` | ❌ Nicht eingebaut → nach Veröffentlichung ✅ Eingebaut |
+| Verantwortlich für Prüfung und Freigabe | [Name] |
+| Stand des Briefings | [TT.MM.JJJJ] |
 
-## 2. Nachprüfbare Produktdaten
+## 2. Nachprüfbare Produktfakten
 
-| Angabe | Eintrag / Beleg |
+Nur Angaben, die auf der Verkaufsseite oder in einer anderen Quelle belegt sind. Unbelegtes bleibt leer und wird auf der Seite als offene Frage genannt.
+
+| Angabe | Eintrag | Quelle / Abrufdatum |
+|---|---|---|
+| Offizielle Verkaufsseite | [URL] | |
+| Produktart und Format (E-Book, Kurs, Challenge, Planer …) | [eintragen] | |
+| Inhalt: Module, Kapitel, Dateien, Umfang | [eintragen] | |
+| Zugang und Lieferung (Download, Login, Dauer) | [eintragen] | |
+| Technische Voraussetzungen | [eintragen] | |
+| Support, Updates, Rückgabe / Widerruf | [eintragen] | |
+| Für wen geeignet | [eintragen, begründet] | |
+| Für wen **nicht** geeignet | [eintragen, begründet] | |
+| Selbst getestet? | Ja (Datum, Umfang) / **Nicht selbst getestet** | |
+
+**Regel:** Keine Eigenschaften, Ergebnisse, Rabatte oder Garantien aus dem Produktnamen oder Werbeversprechen ableiten.
+
+## 3. Preis
+
+Der Preis steht **immer** auf der Seite: im Hero als Preisbox, im Abschnitt „Preis und Konditionen“ und in einer FAQ.
+
+| Angabe | Eintrag |
 |---|---|
-| Exakter Produktname und Anbieter | [eintragen] |
-| Offizielle Produkt- und Verkaufsseite | [URL] |
-| Persönlicher Promo-Link | [URL] |
-| Aktueller Preis, Währung und Zahlungsmodell | [eintragen; Prüftag: YYYY-MM-DD] |
-| Inhalt und Leistungsumfang: Module, Dateien, Dauer, Zugang | [eintragen; Quelle verlinken] |
-| Lieferung, technische Voraussetzungen und Sprache des Produkts | [eintragen; Quelle verlinken] |
-| Für wen das Produkt geeignet ist | [eintragen; Quelle oder eigene begründete Einordnung] |
-| Für wen es **nicht** geeignet ist | [eintragen; Begründung] |
-| Support, Aktualisierungen, Rückgabe und etwaige Zusatzkosten | [eintragen; Quelle verlinken] |
-| Bilder/Screenshots und Nutzungsrechte | [Datei/Quelle und Erlaubnis eintragen] |
-| Preis- und Linkpflege: wer prüft wann erneut? | [Person und Intervall eintragen] |
+| Produktpreis laut Verkaufsseite | [z. B. 12,99 €] |
+| Endbetrag im Checkout (inkl. MwSt.) | [z. B. 15,46 € inkl. 19 % MwSt.] |
+| Zahlungsmodell | Einmalzahlung / Abo (Intervall, Kündigung) / Ratenzahlung |
+| Währung | [EUR / USD …] – bei Fremdwährung Hinweis auf Umrechnung |
+| Zusatzkosten / Upsells im Checkout | [eintragen oder „keine sichtbar“] |
+| Prüftag | [TT.MM.JJJJ] |
+| Quelle | [URL des Checkouts] |
+| Widersprüche zwischen Angaben? | [beschreiben oder „keine“] |
 
-**Regel:** Keine Eigenschaften, Ergebnisse, Rabatte, Bewertungen oder Garantien aus dem Produktnamen ableiten. Unbelegte Angaben offenlassen, bis sie geprüft sind.
+**So steht der Preis auf der Seite:** „Preis: 12,99 € (Endbetrag im Checkout: 15,46 € inkl. MwSt.) · Stand: TT.MM.JJJJ. Maßgeblich ist der Preis im Bestellschritt.“ Sind die Angaben widersprüchlich, wird das offen gesagt, statt einen Preis zu wählen.
 
-## 3. Suchintention und Seitenziel
+## 4. Partnerlink mit Campaign Key (Pflicht)
+
+Jedes Produkt bekommt **einen eigenen Campaign Key**. Regeln und Schema: siehe [Digistore24.md](Digistore24.md).
+
+| Angabe | Eintrag |
+|---|---|
+| Partnerprogramm | Digistore24 / Plannerpack / [anderes] |
+| Produkt-ID (bei Digistore24) | [z. B. 743903] |
+| Campaign Key | `okw-[kurzname]` |
+| Fertiger Partnerlink | [vollständige URL] |
+| Key eingetragen in | ☐ `Digistore24.md` (bei Digistore24) ☐ `Produktliste.md` |
+| Link getestet (Zielseite lädt, Key bleibt erhalten) | ☐ Ja, am [TT.MM.JJJJ] |
+
+**Linkaufbau Digistore24:**
+
+```
+https://www.checkout-ds24.com/redir/<PRODUKT-ID>/mysticmarketing/<CAMPAIGN-KEY>
+```
+
+**Andere Partnerprogramme:** Den Campaign Key trotzdem vergeben und dokumentieren. Kann das Programm ihn nicht im Link übertragen (z. B. Plannerpack mit `#aff=mysticmarketing`), im Briefing „Key intern vergeben, im Link nicht übertragbar“ vermerken.
+
+Auf der Seite: jeder Partnerlink mit `rel="sponsored noopener"` und `target="_blank"`, sichtbar als „Werbung“ gekennzeichnet; das `aria-label` endet auf „(Werbung)“.
+
+## 5. Suchintention und Keywords
 
 | Angabe | Eintrag |
 |---|---|
 | Hauptfrage, die die Seite beantwortet | [ein Satz] |
-| Primäres Suchthema / Hauptkeyword | [eintragen] |
-| Drei bis fünf eng verwandte Fragen oder Suchbegriffe | [eintragen] |
-| Suchintention: Information, Vergleich oder konkrete Kaufentscheidung | [eintragen] |
-| Suchergebnis-Check: Welche Seitentypen ranken derzeit? | [Datum, 3–5 URLs und Beobachtung] |
-| Eigenständiger Nutzen gegenüber diesen Ergebnissen | [konkret benennen] |
-| Passende interne Links zu bestehenden Seiten | [URLs und sinnvoller Kontext] |
-| Gewünschte Handlung auf der Seite | [z. B. Produkt ansehen] |
+| Hauptkeyword | [eintragen] |
+| 3–5 verwandte Suchbegriffe / Fragen | [eintragen – liefern Stoff für die FAQ] |
+| Suchintention | Information · Vergleich · Kaufentscheidung |
+| Suchergebnis-Check (Datum, 3–5 URLs, Beobachtung) | [eintragen] |
+| Eigener Mehrwert gegenüber diesen Seiten | [konkret benennen] |
+| Interne Links (passende Produkt- oder Ratgeberseiten) | [eintragen] |
 
-Ein Suchvolumenwert allein entscheidet nicht über das Keyword. Das Thema muss zur Website, Zielgruppe und tatsächlichen Produktleistung passen.
+Eine umformulierte Anbieterbeschreibung mit Partnerlink ist nach den [Google-Spamrichtlinien](https://developers.google.com/search/docs/essentials/spam-policies) „Thin Affiliation“. Mindestens ein eigener Mehrwert ist Pflicht: Kauf-Check, Eignung und Grenzen, Vergleich, beantwortete Fragen oder eigener Test.
 
-## 4. Eigener Mehrwert für den Inhalt
+## 6. Schwartz-Analyse
 
-Mindestens **eine konkrete, belegbare eigene Leistung** festhalten, idealerweise mehrere:
+Diese Analyse entscheidet, **womit die Seite beginnt** und **wie die Überschrift klingt**.
 
-- [ ] Produkt selbst geprüft: Zugang, Datum, getestete Funktionen und eigene Screenshots dokumentiert.
-- [ ] Konkrete Anwendungsfrage gelöst, z. B. eine nachvollziehbare Schritt-für-Schritt-Nutzung.
-- [ ] Unterschiede zu passenden Alternativen sachlich und aktuell verglichen.
-- [ ] Stärken und Grenzen mit Beispielen erklärt.
-- [ ] Häufige Kauf- oder Nutzungsfragen beantwortet, die die Verkaufsseite offenlässt.
+### 6.1 Der vorhandene Massenwunsch
+
+| Frage | Eintrag |
+|---|---|
+| Welchen Wunsch hat die Zielgruppe schon, bevor sie die Seite sieht? | [z. B. „entspannter Urlaub mit Kindern ohne Überforderung“] |
+| Welches konkrete Bild hat sie dabei im Kopf? | [Szene in einem Satz] |
+| Welches Hindernis steht diesem Wunsch im Weg? | [eintragen] |
+| Wie stark und dringend ist der Wunsch? | gering · mittel · hoch |
+
+### 6.2 Bewusstseinsstufe der Besucher
+
+Die Stufe bestimmt den Einstieg. Bei Suchtraffic meist Stufe 3 oder 4.
+
+| Stufe | Besucher weiß … | Einstieg der Seite | Gewählt |
+|---|---|---|:---:|
+| 1 Unbewusst | nichts vom Problem | mit Geschichte oder Szene, die sich wiedererkennt | ☐ |
+| 2 Problembewusst | um das Problem, kennt keine Lösung | mit dem Problem und seinen Folgen | ☐ |
+| 3 Lösungsbewusst | dass es Lösungen gibt, nicht dieses Produkt | mit dem Wunschergebnis und dem Weg dorthin | ☐ |
+| 4 Produktbewusst | vom Produkt, ist unsicher | mit dem, was das Produkt konkret leistet und für wen | ☐ |
+| 5 Vollständig bewusst | alles, braucht nur Preis und Link | mit Produktname, Preis und Link | ☐ |
+
+### 6.3 Marktreife (wie viele ähnliche Versprechen kennt die Zielgruppe schon?)
+
+| Stufe | Situation | Strategie für die Überschrift | Gewählt |
+|---|---|---|:---:|
+| 1 | Neues Thema | Wunsch direkt und einfach benennen | ☐ |
+| 2 | Erste Konkurrenz | Versprechen konkreter machen (Zahlen, Umfang – nur belegt) | ☐ |
+| 3 | Viele gleiche Versprechen | den **Mechanismus** zeigen: wie das Produkt es erreicht | ☐ |
+| 4 | Mechanismen bekannt | Mechanismus präzisieren, einfacher oder vollständiger | ☐ |
+| 5 | Zielgruppe ist übersättigt | über **Identifikation** einsteigen: „für wen“ statt „was“ | ☐ |
+
+### 6.4 Mechanismus, Identifikation, Beleg
+
+| Element | Eintrag |
+|---|---|
+| Mechanismus: Wie bringt das Produkt den Leser zum Ziel? (aus den Produktfakten, Abschnitt 2) | [z. B. „fünf Tagesaufgaben von der Idee bis zum Start“] |
+| Identifikation: In welchem Satz erkennt sich der Leser wieder? | [z. B. „Du hast eine Idee, aber noch kein Angebot.“] |
+| Belege, die es wirklich gibt (Inhaltsverzeichnis, Umfang, eigener Test) | [eintragen] |
+| Steigerung: welche belegten Details machen den Nutzen greifbar? | [konkrete Kapitel, Beispiele, Zahlen] |
+
+**Grenzen der Methode auf dieser Website:** kein Druck durch erfundene Knappheit oder Countdown, keine Einkommens-, Heil- oder Erfolgsversprechen, keine abwertenden Aussagen über Alternativen. Bei Finanz- und Gesundheitsthemen besonders zurückhaltend formulieren.
+
+### 6.5 Überschrift und Kernaussage
+
+| Element | Entwurf |
+|---|---|
+| H1 (aus Wunsch + Stufe + Marktreife, mit Hauptkeyword) | [eintragen] |
+| Lead (2 Sätze: Wunsch aufgreifen, Mechanismus nennen) | [eintragen] |
+| Title-Tag (max. ca. 60 Zeichen) | [eintragen] |
+| Meta-Description (max. ca. 155 Zeichen, mit Preis-/Nutzenhinweis) | [eintragen] |
+
+## 7. Produktbild
+
+Auch das Bild folgt Schwartz: Es zeigt **das Produkt im Zusammenhang mit dem Wunsch**, nicht nur eine Datei.
 
 | Angabe | Eintrag |
 |---|---|
-| Art und Umfang der eigenen Prüfung | [eintragen; falls keine Prüfung stattfand, „nicht selbst getestet“] |
-| Beobachtungen mit Belegen | [eintragen] |
-| Einschränkungen und offene Fragen | [eintragen] |
-| Vergleichbare Alternativen und Auswahlkriterien | [eintragen] |
-| Quellen und Stand der Recherche | [Links und Datum] |
+| Bildquelle | echtes Produktcover / eigener Screenshot / Anbieter-Pressebild |
+| Nutzungsrecht geklärt? | ☐ Ja (Nachweis: [eintragen]) – ohne Nachweis Platzhalter „Produktbild derzeit nicht verfügbar“ |
+| Bildaussage (welchen Teil des Wunsches zeigt es?) | [z. B. „Cover des Reiseführers vor Strandmotiv“] |
+| Alt-Text (Produkt + Format + Wunschbezug, sachlich, max. ca. 125 Zeichen) | [z. B. „Cover des E-Books ‚Bali Reiseführer‘ mit 122 Tipps für die Reiseplanung“] |
+| Bildunterschrift (optional, ein Satz, belegt) | [eintragen] |
+| Datei | `assets/produkte/[kurzname].webp`, max. ca. 1200 px Breite, komprimiert |
 
-Eine umformulierte Anbieterbeschreibung mit Affiliate-Link reicht als eigenständige SEO-Seite nicht aus. Google bezeichnet solche Seiten ohne zusätzlichen Nutzen als „Thin Affiliation“: [Google-Spamrichtlinien](https://developers.google.com/search/docs/essentials/spam-policies). Für echte Reviews empfiehlt Google eigene Belege, nachvollziehbare Vor- und Nachteile und Vergleiche: [Google-Leitfaden für Produktbewertungen](https://developers.google.com/search/docs/specialty/ecommerce/write-high-quality-reviews).
+**Nicht erlaubt:** Mockups, die Inhalte, Formate oder Ergebnisse zeigen, die es nicht gibt (z. B. ein gedrucktes Buch bei einem reinen E-Book), erfundene Personen mit Erfolgsergebnis, Sterne oder Siegel.
 
-## 5. Verbindliche Angaben auf der fertigen Seite
+## 8. Seitenaufbau
 
-- **Transparenz:** Affiliate-Beziehung sichtbar erklären. Den Promo-Link im HTML mit `rel="sponsored"` kennzeichnen: [Google zu bezahlten Links](https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links).
-- **Aktualität:** Preis, Leistungsumfang und Verfügbarkeit nur mit Prüftag nennen; bei Änderungen die Seite anpassen.
-- **Autorschaft:** Autor bzw. verantwortliche Redaktion und fachliche Grundlage nennen, besonders bei sensiblen Themen wie Finanzen oder Gesundheit: [Google zu hilfreichen Inhalten](https://developers.google.com/search/docs/fundamentals/creating-helpful-content).
-- **Strukturierte Daten:** Nur zutreffende, sichtbare und belegte Angaben auszeichnen. Eine Affiliate-Seite, auf der Besucher extern kaufen, ist keine eigene Händler-Produktseite für Googles Merchant-Listing-Auszeichnung: [Google zu Merchant Listings](https://developers.google.com/search/docs/appearance/structured-data/merchant-listing). Ob ein Product Snippet sinnvoll und zulässig ist, wird pro Seite anhand der tatsächlichen Inhalte geprüft: [Google zu Product Snippets](https://developers.google.com/search/docs/appearance/structured-data/product-snippet).
-- **Keine erfundenen Bewertungen:** Sterne, Testergebnisse, Erfahrungsberichte und Erfolgsversprechen nur verwenden, wenn sie real und nachweisbar sind.
+Die Reihenfolge ist fest. Die Spalte „Aufgabe nach Schwartz“ bestimmt den Ton des Abschnitts. Gestaltung nach [DESIGN.md](DESIGN.md).
 
-## 6. Übergabe für die Seitenerstellung
+| # | Abschnitt | Inhalt | Aufgabe nach Schwartz |
+|---|---|---|---|
+| 1 | **Hero** | Eyebrow „Kategorie · Werbung“, H1, Lead, Meta-Zeile („Redaktion: online-kurse-welt.de · Anbieterangaben geprüft am … · Selbst getestet / Nicht selbst getestet“), **Preisbox** mit Prüftag, Button mit Partnerlink inkl. Campaign Key, Werbehinweis, Produktbild | Wunsch aufgreifen, Einstieg passend zur Bewusstseinsstufe |
+| 2 | Brotkrumen | Startseite / Produktname | – |
+| 3 | **Worum es geht** | Ausgangslage des Lesers und Hindernis, 2–4 Sätze | Identifikation |
+| 4 | **So funktioniert es** | Ablauf bzw. Aufbau des Produkts in Schritten | Mechanismus |
+| 5 | **Das ist laut Anbieter enthalten** | Liste des Leistungsumfangs, Quelle mit Abrufdatum | Steigerung durch belegte Details |
+| 6 | **Preis und Konditionen** | Preis, Endbetrag, Zahlungsmodell, Zusatzkosten, Rückgabe, Prüftag | Vertrauen durch Klarheit |
+| 7 | **Für wen passt es – und für wen nicht** | zwei kurze Listen | Identifikation und ehrliche Auswahl |
+| 8 | **Unser Kauf-Check** | eigener Mehrwert: Prüffragen oder Test | Beleg |
+| 9 | **Grenzen und offene Fragen** | was nicht belegt oder nicht getestet ist | Glaubwürdigkeit |
+| 10 | **Häufige Fragen** | FAQ, siehe Abschnitt 9 | Einwände beantworten |
+| 11 | **Abschluss-CTA** | ein Satz Nutzen + Aufforderung zur eigenen Prüfung, Button mit gleichem Partnerlink, „Werbung · Partnerlink“ | Handlung |
+| 12 | Weitere Seiten | 1–3 interne Links | – |
 
-Erst wenn die Felder aus Abschnitt 1–3 und die Quellen in Abschnitt 4 vorliegen, wird die individuelle SEO-MD-Datei geschrieben. Die spätere Seite folgt den **tatsächlichen** SEO-MD-Regeln der Website. Titel, Beschreibung, H1, Abschnitte und CTA werden anhand der Suchintention und der belegten Produktdaten formuliert; eine feste Wortzahl oder Keyworddichte wird nicht vorausgesetzt.
+**Stil:** Du-Form wie auf der Startseite, kurze Sätze, aktive Verben, konkrete Bilder statt Superlative. Jeder Absatz beantwortet eine Frage, die der Leser an dieser Stelle hat.
 
-### Kompakte Übergabe zum Kopieren
+## 9. FAQ (immer am Ende der Seite, vor dem Abschluss-CTA)
+
+5–8 Fragen. Quellen: verwandte Suchbegriffe aus Abschnitt 5, Einwände aus der Schwartz-Analyse, offene Punkte der Verkaufsseite.
+
+**Pflichtfragen:**
+
+1. **Was kostet [Produkt]?** – Preis, Endbetrag, Zahlungsmodell, Prüftag.
+2. **Für wen ist [Produkt] geeignet?**
+3. **In welcher Sprache und in welchem Format erhalte ich [Produkt]?**
+4. **Gibt es eine Rückgabe oder Garantie?** – nur mit Beleg, sonst „auf der Verkaufsseite nicht klar angegeben“.
+5. **Garantiert [Produkt] ein bestimmtes Ergebnis?** – ehrliche Antwort.
+
+| Frage | Antwort (2–4 Sätze, belegt) |
+|---|---|
+| [Pflichtfrage 1] | [eintragen] |
+| [Pflichtfrage 2] | [eintragen] |
+| [Pflichtfrage 3] | [eintragen] |
+| [Pflichtfrage 4] | [eintragen] |
+| [Pflichtfrage 5] | [eintragen] |
+| [Zusatzfrage aus Suchbegriffen] | [eintragen] |
+
+Umsetzung: Frage als `h3`, Antwort als `p`. Strukturierte Daten (`FAQPage`) sind erlaubt, wenn Fragen und Antworten sichtbar auf der Seite stehen. Google zeigt FAQ-Rich-Results allerdings nur noch für wenige behördliche und Gesundheitsseiten an: [Google zu FAQ-Daten](https://developers.google.com/search/docs/appearance/structured-data/faqpage).
+
+## 10. Pflichtangaben auf der fertigen Seite
+
+- **Werbekennzeichnung:** „Werbung“ im Eyebrow und direkt bei jedem Partnerlink; zusätzlich der Werbehinweis im Footer. Partnerlinks mit `rel="sponsored"`: [Google zu bezahlten Links](https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links).
+- **Preis mit Prüftag** und Hinweis, dass der Preis im Bestellschritt maßgeblich ist.
+- **Autorschaft und Prüfstatus** in der Meta-Zeile, inklusive „Nicht selbst getestet“, falls zutreffend: [Google zu hilfreichen Inhalten](https://developers.google.com/search/docs/fundamentals/creating-helpful-content).
+- **Quellen** für Leistungsumfang mit Abrufdatum.
+- **Strukturierte Daten** nur für sichtbare, belegte Angaben. Keine Merchant-Listing-Auszeichnung, da der Kauf extern stattfindet: [Google zu Merchant Listings](https://developers.google.com/search/docs/appearance/structured-data/merchant-listing).
+- **Keine erfundenen Bewertungen**, Sterne, Testimonials, Erfolgszahlen oder Knappheit.
+
+## 11. Freigabe-Check
+
+- [ ] Alle Fakten in Abschnitt 2 und 3 haben eine Quelle mit Datum.
+- [ ] Campaign Key vergeben, Link getestet, in `Digistore24.md` bzw. `Produktliste.md` eingetragen.
+- [ ] H1, Lead und Abschnitte folgen der gewählten Bewusstseinsstufe und Marktreife.
+- [ ] Keine Aussage geht über die Belege hinaus.
+- [ ] Produktbild mit geklärtem Nutzungsrecht und Alt-Text – oder Platzhalter.
+- [ ] Preis steht im Hero, im Abschnitt „Preis und Konditionen“ und in der FAQ.
+- [ ] FAQ mit allen Pflichtfragen am Seitenende.
+- [ ] Jeder Partnerlink: `rel="sponsored noopener"`, sichtbar „Werbung“.
+- [ ] Seite in `sitemap.xml` eingetragen, Status in `Produktliste.md` auf ✅ gesetzt.
+- [ ] Datenschutzerklärung nennt das Partnerprogramm.
+- [ ] Desktop- und Mobilansicht geprüft.
+
+---
+
+## Kompakte Übergabe zum Kopieren
 
 ```text
-SEO-MD-Regeldatei / Link:
-Zieldomain / Seitenpfad:
-Sprache / Zielland / Zielgruppe:
 Produktname / Anbieter:
-Offizielle Produktseite:
-Promo-Link:
-Preis / Zahlungsmodell / Prüftag:
-Leistungsumfang / Voraussetzungen / Support / Rückgabe (mit Quellen):
-Hauptsuchfrage / Suchintention:
-Hauptkeyword / verwandte Fragen:
-Bestehende ähnliche Seiten / interne Links:
-Eigene Prüfung oder anderer belegbarer Mehrwert:
-Stärken / Grenzen / Alternativen:
-Bilder und Nutzungsrechte:
-Verantwortliche Person für fachliche Prüfung:
+Seitenpfad / Kategorie:
+Verkaufsseite:
+Leistungsumfang (mit Quelle, Abrufdatum):
+Sprache / Format / Zugang:
+Für wen / nicht für wen:
+Selbst getestet:
+
+Preis laut Verkaufsseite:
+Endbetrag Checkout / Zahlungsmodell / Zusatzkosten:
+Prüftag / Quelle:
+
+Partnerprogramm / Produkt-ID:
+Campaign Key:
+Fertiger Partnerlink:
+
+Hauptkeyword / verwandte Suchbegriffe:
+Suchintention / eigener Mehrwert:
+
+Massenwunsch / Hindernis:
+Bewusstseinsstufe (1–5):
+Marktreife (1–5):
+Mechanismus:
+Identifikationssatz:
+H1 / Lead:
+Title / Meta-Description:
+
+Produktbild (Quelle, Recht, Alt-Text):
+FAQ (Pflichtfragen + Zusatzfragen):
+Interne Links:
+Freigabe durch:
 ```

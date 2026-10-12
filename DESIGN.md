@@ -38,7 +38,7 @@ Die CSS-Variablen in `styles.css` sind die technische Quelle für die Grundfarbe
 ## Header und Navigation
 
 - Jede Seite nutzt den weißen Header mit dem blauen Buchsymbol und dem Schriftzug `online-kurse-welt.de`. Das Logo führt zur Startseite.
-- Desktop: Logo links, die Hauptnavigation in einer waagerechten Zeile. Die Startseite zeigt `Kurse entdecken`, `Kategorien`, `Ratgeber`.
+- Desktop: Logo links, die Hauptnavigation in einer waagerechten Zeile. Die Startseite zeigt `Produkte entdecken`, `Kategorien`, `Ratgeber`.
 - Mobil: Logo oben, Navigation darunter; alle Punkte bleiben ohne Menüzwang sichtbar und erreichbar.
 - Navigationspunkte führen zu einem echten Abschnitt oder einer fertigen Seite. Solange ein Ziel noch fehlt, wird der Platzhalterzustand klar angezeigt; keine leeren Links verwenden.
 - Hover und Tastaturfokus sind sichtbar. Interaktive Elemente erhalten verständliche Beschriftungen.
@@ -54,10 +54,10 @@ Die CSS-Variablen in `styles.css` sind die technische Quelle für die Grundfarbe
 
 ### Produktseiten
 
-- Produktseiten beginnen mit einem hellblauen Introbereich: Kategorie und Werbekennzeichnung, eine H1, kurze Einordnung, Prüfdatum, CTA und, sofern vorhanden, ein lokal gespeichertes Produktbild.
-- Danach folgen belegte Leistungsmerkmale, Eignung, ein eigener Kauf-Check, Grenzen, häufige Fragen und ein zweiter klar gekennzeichneter CTA. Anbieterangaben werden von redaktioneller Einordnung getrennt.
-- Fehlt ein echtes Produktbild, steht ein ruhiger Textplatzhalter an dessen Stelle. Generische Anbieter-Platzhalterbilder werden nicht als Cover gezeigt.
-- Die Startseite zeigt aktuelle Produkte als weiße Karten mit lokaler Covergrafik oder Textfläche. Jede Karte trägt sichtbar „Werbung“ und führt zur internen Produktseite.
+- Produktseiten beginnen mit einem hellblauen Introbereich: Kategorie und Werbekennzeichnung, eine H1, Lead, Prüfdatum, Preisbox, CTA und ein belegtes Produktbild oder einen Platzhalter.
+- Der Inhalt folgt der Reihenfolge aus `SEO-Produktseite-Briefing-Vorlage.md`: Worum es geht, Ablauf, belegter Umfang, Preis und Konditionen, Eignung, eigener Kauf-Check, Grenzen, FAQ und Abschluss-CTA. Anbieterangaben bleiben von redaktioneller Einordnung getrennt.
+- Produktbilder werden nur bei nachgewiesenem Nutzungsrecht gezeigt. Andernfalls erscheint ein ruhiger Textplatzhalter; generische Anbieter-Platzhalter und irreführende Buch-Mockups bleiben weg.
+- Die Startseite zeigt aktuelle Produkte als weiße Karten mit freigegebenem Cover oder Textfläche. Jede Karte trägt sichtbar „Werbung“ und führt zur internen Produktseite.
 - Die statischen Produktseiten werden aus `generate_product_pages.py` erzeugt; zu jeder gehört ein ausgefülltes Briefing unter `produkt-briefings/`.
 
 ## Footer
