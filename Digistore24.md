@@ -39,8 +39,8 @@ Nur Digistore24-Produkte (Links über `checkout-ds24.com`). Die übrigen Produkt
 
 | Produkt | Produkt-ID | Campaign Key | Fertiger Link |
 |---|---|---|---|
-| Wandern auf Teneriffa mit Kindern für Anfänger | 743903 | *noch nicht vergeben* | `https://www.checkout-ds24.com/redir/743903/mysticmarketing/` |
-| Bali Reiseführer | 743944 | *noch nicht vergeben* | `https://www.checkout-ds24.com/redir/743944/mysticmarketing/` |
+| Wandern auf Teneriffa mit Kindern für Anfänger | 743903 | `okw-teneriffa-wandern` | `https://www.checkout-ds24.com/redir/743903/mysticmarketing/okw-teneriffa-wandern` |
+| Bali Reiseführer | 743944 | `okw-bali-reisefuehrer` | `https://www.checkout-ds24.com/redir/743944/mysticmarketing/okw-bali-reisefuehrer` |
 
 ## Quellen
 

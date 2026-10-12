@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /*.md$
 
-Sitemap: https://online-kurse-welt.de/sitemap.xml
+Sitemap: https://www.online-kurse-welt.de/sitemap.xml

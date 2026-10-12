@@ -52,6 +52,14 @@ Die CSS-Variablen in `styles.css` sind die technische Quelle für die Grundfarbe
 - Kategoriekacheln und Kurskarten folgen dem Muster der Startseite: weißer Hintergrund, heller Rand, klares Icon beziehungsweise Bild, kurze Texte und eine eindeutige Aktion.
 - Bilder sollen zum Lernen und zum jeweiligen Kursthema passen. Die aktuelle Startseite verwendet Ausschnitte der gelieferten Bildvorlage. Für spätere echte Kurse eigene passende Bilder einsetzen und Bildbeschreibungen pflegen.
 
+### Produktseiten
+
+- Produktseiten beginnen mit einem hellblauen Introbereich: Kategorie und Werbekennzeichnung, eine H1, kurze Einordnung, Prüfdatum, CTA und, sofern vorhanden, ein lokal gespeichertes Produktbild.
+- Danach folgen belegte Leistungsmerkmale, Eignung, ein eigener Kauf-Check, Grenzen, häufige Fragen und ein zweiter klar gekennzeichneter CTA. Anbieterangaben werden von redaktioneller Einordnung getrennt.
+- Fehlt ein echtes Produktbild, steht ein ruhiger Textplatzhalter an dessen Stelle. Generische Anbieter-Platzhalterbilder werden nicht als Cover gezeigt.
+- Die Startseite zeigt aktuelle Produkte als weiße Karten mit lokaler Covergrafik oder Textfläche. Jede Karte trägt sichtbar „Werbung“ und führt zur internen Produktseite.
+- Die statischen Produktseiten werden aus `generate_product_pages.py` erzeugt; zu jeder gehört ein ausgefülltes Briefing unter `produkt-briefings/`.
+
 ## Footer
 
 - Jede Seite endet mit einem weißen Footer. Links steht die kleine Logo-Variante; rechts stehen die Footer-Links und bei Bedarf ein knapper Hinweis.

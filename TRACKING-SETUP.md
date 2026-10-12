@@ -17,7 +17,7 @@ Direkte Einbindung und GTM-Einbindung desselben Dienstes dürfen nicht parallel 
 
 `datenschutz.html` beschreibt folgende Einstellungen. Sie müssen so im jeweiligen Konto gesetzt sein, sonst ist der Text anzupassen:
 
-- ALL-INKL.COM: Auftragsverarbeitungsvertrag im KAS abgeschlossen.
+- Vercel: Tatsächlich eingesetztes Webhosting; Vertrag, Tarif, Auftragsverarbeitung und Datenstandorte im Vercel-Konto prüfen. ALL-INKL.COM wird in der Datenschutzerklärung nur für den E-Mail-Empfang genannt.
 - GA4: Datenaufbewahrung **2 Monate**, Google Signals aus, keine Verknüpfung mit Google Ads, Werbefunktionen aus.
 - Clarity: Masking „Strict“ oder „Balanced“ (Eingaben maskiert), Consent Mode aktiv.
 - Meta Pixel: nur `PageView`; Bedingungen inkl. „Zusatz für Verantwortliche“ im Business Manager akzeptiert.
