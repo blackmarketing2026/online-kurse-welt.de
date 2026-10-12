@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#eaf7ff">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <meta name="description" content="Entdecke Online-Kurse für Beruf, Alltag und persönliche Entwicklung auf online-kurse-welt.de.">
+    <title>Online-Kurse entdecken | online-kurse-welt.de</title>
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="consent.css">
+    <script src="consent-config.js" defer></script>
+    <script src="consent.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="online-kurse-welt.de – Startseite">
+          <svg class="brand-mark" viewBox="0 0 46 36" aria-hidden="true"><path d="M22 5.5C15.7 1.5 8.2 1.1 1 3v27.4c7.3-1.9 14.8-1.5 21 2.5V5.5Z" fill="#27a7ff"/><path d="M24 5.5c6.3-4 13.8-4.4 21-2.5v27.4c-7.3-1.9-14.8-1.5-21 2.5V5.5Z" fill="#27a7ff"/><path d="M23 5v29" stroke="white" stroke-width="1.7"/></svg>
+          <span>online-kurse-welt.de</span>
+        </a>
+        <nav class="main-nav" aria-label="Hauptnavigation">
+          <a href="#kurse">Kurse entdecken</a>
+          <a href="#kategorien">Kategorien</a>
+          <button type="button" data-dialog="ratgeber">Ratgeber</button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1 id="hero-title">Dein nächster Schritt <br>beginnt mit Wissen.</h1>
+            <p>Entdecke Online-Kurse für Beruf, Alltag und persönliche Entwicklung.</p>
+            <a class="primary-button" href="#kurse">Kurse entdecken <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="hero-art" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section class="categories container" id="kategorien" aria-labelledby="categories-title">
+        <h2 id="categories-title">Was möchtest du lernen?</h2>
+        <div class="category-grid" role="group" aria-label="Kurskategorie wählen">
+          <button class="category" type="button" data-category="business" aria-pressed="false">
+            <svg viewBox="0 0 36 36" aria-hidden="true"><path d="M7 27V19m9 8V12m9 15V6"/></svg>
+            <span>Business &amp; Marketing</span>
+          </button>
+          <button class="category" type="button" data-category="persoenlich" aria-pressed="false">
+            <svg viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="11" r="5.5"/><path d="M6.5 29v-2c0-6 5-9 11.5-9s11.5 3 11.5 9v2H6.5Z"/></svg>
+            <span>Persönliche Entwicklung</span>
+          </button>
+          <button class="category" type="button" data-category="gesundheit" aria-pressed="false">
+            <svg viewBox="0 0 36 36" aria-hidden="true"><path d="M18 29 7.1 17.8C.6 11.2 9.4 2.5 16 9l2 2 2-2c6.6-6.5 15.4 2.2 8.9 8.8L18 29Z"/></svg>
+            <span>Gesundheit &amp; Fitness</span>
+          </button>
+          <button class="category" type="button" data-category="kreativitaet" aria-pressed="false">
+            <svg viewBox="0 0 36 36" aria-hidden="true"><path d="M18 3.5a14.5 14.5 0 1 0 0 29h2.6a4 4 0 0 0 3.4-6.1c-.8-1.3-.2-2.9 1.3-3.1a4.5 4.5 0 0 1 2.1.1c2.9.8 5.1-1.4 5.1-4.4A14.5 14.5 0 0 0 18 3.5Z"/><circle cx="10.5" cy="15" r="1.2"/><circle cx="15" cy="9.5" r="1.2"/><circle cx="23" cy="10.5" r="1.2"/><circle cx="27" cy="17" r="1.2"/></svg>
+            <span>Kreativität</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="courses container" id="kurse" aria-labelledby="courses-title">
+        <div class="courses-heading">
+          <h2 id="courses-title">Entdecke passende Online-Kurse</h2>
+          <button class="reset-filter" type="button" hidden>Alle Kurse anzeigen</button>
+        </div>
+        <div class="course-grid">
+          <article class="course-card" data-category="business">
+            <div class="course-image course-image-business" role="img" aria-label="Laptop mit Marketing-Diagrammen auf einem Schreibtisch"></div>
+            <div class="course-body">
+              <p class="eyebrow">Business &amp; Marketing</p>
+              <h3>Online-Marketing verstehen</h3>
+              <p>Lerne die Grundlagen und setze dein Wissen gezielt in die Praxis um.</p>
+              <button class="text-link" type="button" data-course="Online-Marketing verstehen">Kurs ansehen <span aria-hidden="true">→</span></button>
+            </div>
+          </article>
+          <article class="course-card" data-category="persoenlich">
+            <div class="course-image course-image-personal" role="img" aria-label="Tasse und Notizbuch auf einem hellen Schreibtisch"></div>
+            <div class="course-body">
+              <p class="eyebrow">Persönliche Entwicklung</p>
+              <h3>Produktiver im Alltag</h3>
+              <p>Praktische Methoden für mehr Fokus, Struktur und Lebensqualität.</p>
+              <button class="text-link" type="button" data-course="Produktiver im Alltag">Kurs ansehen <span aria-hidden="true">→</span></button>
+            </div>
+          </article>
+          <article class="course-card" data-category="kreativitaet">
+            <div class="course-image course-image-creative" role="img" aria-label="Fotokamera vor einer Berglandschaft"></div>
+            <div class="course-body">
+              <p class="eyebrow">Kreativität</p>
+              <h3>Fotografie für Einsteiger</h3>
+              <p>Lerne die Grundlagen der Fotografie und mache bessere Fotos – Schritt für Schritt.</p>
+              <button class="text-link" type="button" data-course="Fotografie für Einsteiger">Kurs ansehen <span aria-hidden="true">→</span></button>
+            </div>
+          </article>
+        </div>
+        <p class="empty-state" hidden>Für diese Kategorie zeigen wir bald passende Kurse. Wähle eine andere Kategorie oder sieh dir alle Kurse an.</p>
+      </section>
+
+      <div class="closing-line">Wissen entdecken. Möglichkeiten erweitern.</div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="brand brand-footer" href="index.html" aria-label="online-kurse-welt.de – Startseite">
+          <svg class="brand-mark" viewBox="0 0 46 36" aria-hidden="true"><path d="M22 5.5C15.7 1.5 8.2 1.1 1 3v27.4c7.3-1.9 14.8-1.5 21 2.5V5.5Z" fill="#27a7ff"/><path d="M24 5.5c6.3-4 13.8-4.4 21-2.5v27.4c-7.3-1.9-14.8-1.5-21 2.5V5.5Z" fill="#27a7ff"/><path d="M23 5v29" stroke="white" stroke-width="1.7"/></svg>
+          <span>online-kurse-welt.de</span>
+        </a>
+        <div class="footer-right">
+          <nav aria-label="Footer-Navigation">
+            <button type="button" data-dialog="ratgeber">Ratgeber</button><span aria-hidden="true">·</span>
+            <a href="impressum.html">Impressum</a><span aria-hidden="true">·</span>
+            <a href="datenschutz.html">Datenschutz</a><span aria-hidden="true">·</span>
+            <button class="cookie-settings-button" type="button" data-cookie-settings>Cookie-Einstellungen</button>
+          </nav>
+          <p>Bei verlinkten Kursen können wir eine Provision erhalten.</p>
+        </div>
+      </div>
+    </footer>
+
+    <dialog id="info-dialog" aria-labelledby="dialog-title">
+      <button class="dialog-close" type="button" aria-label="Schließen">×</button>
+      <h2 id="dialog-title"></h2>
+      <p id="dialog-copy"></p>
+    </dialog>
+  </body>
+</html>
