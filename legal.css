@@ -10,3 +10,6 @@
   .legal-content h2 { font-size: 20px; }
   .legal-content address, .legal-content p { font-size: 16px; }
 }
+.legal-content ul { margin: 0 0 14px; padding-left: 22px; color: var(--muted); font-size: 18px; line-height: 1.6; }
+.legal-content .legal-highlight { padding: 14px 16px; border: 1px solid var(--line); border-radius: 9px; background: #f5fbff; }
+@media (max-width: 650px) { .legal-content ul { font-size: 16px; } }

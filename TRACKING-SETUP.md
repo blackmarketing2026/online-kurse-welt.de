@@ -13,6 +13,16 @@ Der Banner und die Lade-Sperre sind in `consent.js` eingebaut. Aktuell sind alle
 
 Direkte Einbindung und GTM-Einbindung desselben Dienstes dürfen nicht parallel aktiv sein. Wenn GA4, Clarity oder Meta Pixel im GTM verwaltet werden, bleibt die jeweilige direkte ID leer; die Zustimmung muss dort trotzdem für jeden Dienst einzeln beachtet werden. Der GTM-Container darf keine weiteren Tags ohne eigene passende Einwilligung auslösen. Für Google-Tags sind die vier Consent-Mode-v2-Zustände vor dem ersten Tag und bei jeder Änderung korrekt zu prüfen. Die derzeitige Marketing-Auswahl gilt nur für Meta Pixel und erteilt **keine** Zustimmung zu Google Ads.
 
+## Abgleich mit der Datenschutzerklärung
+
+`datenschutz.html` beschreibt folgende Einstellungen. Sie müssen so im jeweiligen Konto gesetzt sein, sonst ist der Text anzupassen:
+
+- ALL-INKL.COM: Auftragsverarbeitungsvertrag im KAS abgeschlossen.
+- GA4: Datenaufbewahrung **2 Monate**, Google Signals aus, keine Verknüpfung mit Google Ads, Werbefunktionen aus.
+- Clarity: Masking „Strict“ oder „Balanced“ (Eingaben maskiert), Consent Mode aktiv.
+- Meta Pixel: nur `PageView`; Bedingungen inkl. „Zusatz für Verantwortliche“ im Business Manager akzeptiert.
+- Beim Aktivieren eines Dienstes den Hinweis „Aktueller Stand: … derzeit nicht aktiv“ in Abschnitt 7 der Datenschutzerklärung anpassen und das Datum „Stand“ aktualisieren.
+
 ## Pflichtprüfung vor Veröffentlichung der aktivierten Dienste
 
 1. Datenschutzerklärung für die tatsächlichen IDs, Anbieter, Zwecke, Ereignisse, Cookie-Laufzeiten, Aufbewahrungsfristen und mögliche Drittlandübermittlungen ergänzen.

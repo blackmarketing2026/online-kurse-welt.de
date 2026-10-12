@@ -55,7 +55,9 @@ Die CSS-Variablen in `styles.css` sind die technische Quelle für die Grundfarbe
 ## Footer
 
 - Jede Seite endet mit einem weißen Footer. Links steht die kleine Logo-Variante; rechts stehen die Footer-Links und bei Bedarf ein knapper Hinweis.
-- `Impressum` und `Datenschutz` sind auf jeder Seite erreichbar. Der aktuelle Provisionshinweis der Startseite bleibt sichtbar, solange verlinkte Kurse provisionsbasiert sein können.
+- `Impressum` und `Datenschutz` sind auf jeder Seite erreichbar.
+- Unter den Footer-Links steht auf jeder Seite der Werbehinweis (`p.affiliate-disclaimer`): „**Werbehinweis:** Diese Website ist eine Affiliate-Seite. Links zu Kursen und Produkten sind Partnerlinks (Werbung). Bei einem Kauf über diese Links erhalten wir eine Provision. Der Preis ändert sich dadurch nicht.“ Er ist 11 px groß, in gedämpftem Blau, höchstens 520 px breit und auf Desktop rechtsbündig.
+- Der Footer-Hinweis ersetzt nicht die Kennzeichnung am Link selbst: Jeder Partnerlink und jede Karte oder jeder Teaser mit Partnerlink wird direkt sichtbar als „Werbung“ oder „Anzeige“ gekennzeichnet.
 - Auf schmalen Bildschirmen stehen Logo und Links untereinander und sind linksbündig.
 - Impressum und Datenschutzhinweise beschreiben den aktuellen Stand der Website. Bei neuen Diensten, Partnerlinks oder technischen Änderungen werden sie vor der Veröffentlichung der Änderung geprüft und aktualisiert.
 - „Cookie-Einstellungen“ ist auf jeder Seite im Footer erreichbar. Der Einwilligungsbanner nutzt die vorhandenen Blau- und Weißtöne; Ablehnen und Akzeptieren sind gleich leicht zu finden. Optionale Schalter sind beim ersten Aufruf ausgeschaltet.
@@ -74,3 +76,4 @@ Die CSS-Variablen in `styles.css` sind die technische Quelle für die Grundfarbe
 3. Desktop- und Mobilansicht funktionieren ohne abgeschnittene Inhalte.
 4. Alle sichtbaren Links und Aktionen haben ein sinnvolles Ziel oder einen klaren Platzhalterzustand.
 5. Änderungen am abgestimmten Erscheinungsbild werden hier dokumentiert.
+6. Die neue Seite ist mit aktuellem `lastmod` in `sitemap.xml` eingetragen.
