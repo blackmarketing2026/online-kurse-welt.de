@@ -58,6 +58,7 @@ Die CSS-Variablen in `styles.css` sind die technische Quelle für die Grundfarbe
 - Jede Affiliate-Landingpage verwendet eine eigene CSS-Datei und lädt `styles.css` nicht als visuelle Basis. Technische Konventionen wie saubere URLs, Einwilligung und erreichbare Rechtsseiten bleiben erhalten. Eine klare Seitenstruktur, gute Lesbarkeit, mobile Bedienbarkeit und sichtbare Tastaturfokusse sind Pflicht.
 - Produktinformationen werden mit Quellen belegt. Preis, Vertragsmodell, Eignung, Grenzen, FAQ und ein eigener Kauf-Check sind sinnvoll, aber ihre Reihenfolge und visuelle Form richten sich nach dem jeweiligen Produkt. Anbieterangaben bleiben von redaktioneller Einordnung getrennt.
 - Produktbilder und Markenmaterial von der offiziellen Landingpage dürfen lokal importiert und passend eingesetzt werden. Quelle und Nutzungsrecht beziehungsweise Freigabe für die Partnerwerbung werden geprüft und dokumentiert; Bilder erhalten aussagekräftige Alternativtexte. Wenn kein verwendbares Bild vorliegt, wird ein eigenes grafisches Element gestaltet.
+- Passende Originalbilder der verlinkten Anbieter-Website beziehungsweise offizielle Partner-Werbemittel werden bevorzugt. Die konkrete Quelle und die Grundlage der werblichen Nutzung stehen in `BILDQUELLEN.md`. Enthält ein Cover Einkommens- oder Garantieaussagen, wird es unmittelbar als Anbieterwerbung eingeordnet.
 - Partnerlinks und werbliche Bereiche werden direkt sichtbar als „Werbung“ oder „Anzeige“ gekennzeichnet. Preis- und Leistungsversprechen werden nicht erfunden.
 - Die Startseite zeigt aktuelle Produkte als weiße Karten mit freigegebenem Cover oder Textfläche. Jede Karte trägt sichtbar „Werbung“ und führt zur internen Produktseite.
 - Die Kategorien der Startseite können auch Softwareprodukte für Online-Business aufnehmen. Drei Kacheln stehen auf Desktop nebeneinander, auf kleinen Bildschirmen zweispaltig.
@@ -88,3 +89,7 @@ Die CSS-Variablen in `styles.css` sind die technische Quelle für die Grundfarbe
 4. Alle sichtbaren Links und Aktionen haben ein sinnvolles Ziel oder einen klaren Platzhalterzustand.
 5. Änderungen am abgestimmten Erscheinungsbild werden hier dokumentiert.
 6. Die neue Seite ist mit aktuellem `lastmod` in `sitemap.xml` eingetragen.
+
+## Produktbild-Umsetzung vom 19. Oktober 2026
+
+Die Landingpage „Internet Geld Geheimnis“ zeigt das offizielle Produkt-Mockup im Hero und das Cover des Digistore24-Checkouts im Faktenabschnitt. Die eigenständige grün-cremefarbene Gestaltung bleibt erhalten. Beide Bilder sind lokal eingebunden und mit einer direkt zugeordneten Einordnung der nicht überprüften Werbeaussagen versehen. Quellen und Nutzungsgrundlage sind in `BILDQUELLEN.md` dokumentiert.
