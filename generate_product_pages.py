@@ -85,8 +85,8 @@ PRODUCTS = [
         "mechanism": "Ausgabenmuster per Fragen erkennen, Budget ordnen, kleine Schritte wiederholen – nur soweit auf der Verkaufsseite beschrieben.",
         "identity": "Du weißt, dass du deine Ausgaben ordnen willst, aber noch nicht, ob dieses Programm genug konkrete Hilfe bietet.",
         "related": [
-            ("teneriffa-wandern-mit-kindern.html", "Familienwanderungen auf Teneriffa planen"),
-            ("bali-reisefuehrer.html", "Bali-Reiseführer prüfen"),
+            ("/teneriffa-wandern-mit-kindern", "Familienwanderungen auf Teneriffa planen"),
+            ("/bali-reisefuehrer", "Bali-Reiseführer prüfen"),
         ],
     },
     {
@@ -165,7 +165,7 @@ PRODUCTS = [
         "market": "3 – viele Wanderlisten; die Überschrift nennt die belegten 80 Ideen und das Format.",
         "mechanism": "80 angekündigte Tourideen plus Hinweise zu Streckenauswahl und Vorbereitung.",
         "identity": "Du willst mit Kindern wandern, ohne eine Tour allein nach schönen Bildern auszuwählen.",
-        "related": [("bali-reisefuehrer.html", "Bali-Reise planen")],
+        "related": [("/bali-reisefuehrer", "Bali-Reise planen")],
     },
     {
         "slug": "bali-reisefuehrer",
@@ -242,7 +242,7 @@ PRODUCTS = [
         "market": "3 – viele ähnliche Reiseversprechen; die Überschrift nennt belegte 122 Tipps als konkreten Umfang.",
         "mechanism": "Regional gegliederte Kapitel mit 122 angekündigten Tipps und begleitendem Kartenmaterial.",
         "identity": "Du hast viele Bali-Ideen gesammelt und möchtest wissen, ob dieser Guide bei der Auswahl hilft.",
-        "related": [("teneriffa-wandern-mit-kindern.html", "Familienwanderungen auf Teneriffa")],
+        "related": [("/teneriffa-wandern-mit-kindern", "Familienwanderungen auf Teneriffa")],
     },
 ]
 
@@ -260,7 +260,7 @@ def brief(item):
     facts = "; ".join(point.rstrip(".") for point in item["facts"]) + "."
     faq = "\n".join(f"| {q} | {a} |" for q, a in item["faq"])
     serp = "<br>".join(f"[{name}]({url}) – {observation}" for name, url, observation in item["serp"])
-    related = ", ".join(f"[{label}](../{path})" for path, label in item["related"])
+    related = ", ".join(f"[{label}](https://www.online-kurse-welt.de{path})" for path, label in item["related"])
     return f"""# SEO-Produktbriefing: {item['name']}
 
 Ausgefüllt am {CHECKED} nach [SEO-Produktseite-Briefing-Vorlage.md](../SEO-Produktseite-Briefing-Vorlage.md). Fakten, Anbieterbehauptungen und redaktionelle Einordnung sind getrennt. Freigabe durch den Betreiber steht aus.
@@ -272,7 +272,7 @@ Ausgefüllt am {CHECKED} nach [SEO-Produktseite-Briefing-Vorlage.md](../SEO-Prod
 {rows([
 ("Produktname", item["name"]),
 ("Anbieter / Verkäufer", item["provider"]),
-("Seitenpfad", item["slug"] + ".html"),
+("Seitenpfad", "/" + item["slug"]),
 ("Kategorie", item["category"]),
 ("Sprache", "Englisch laut Angebotsseite" if item["slug"] == "nupem-money-reset" else "Deutsch laut Bestellseite"),
 ("Status", "✅ Eingebaut in Produktliste.md"),
@@ -333,7 +333,7 @@ Ausgefüllt am {CHECKED} nach [SEO-Produktseite-Briefing-Vorlage.md](../SEO-Prod
 ("Suchintention", "Information, Vergleich und Kaufentscheidung"),
 ("Suchergebnis-Check", CHECKED + ": " + serp + ". Relevante Suchergebnisse und Quellen, keine behauptete feste Rangfolge."),
 ("Eigener Mehrwert", "Belegte Fakten, Preisprüfung, konkreter Kauf-Check, Eignung und Grenzen statt einer bloßen Anbieterumschreibung."),
-("Interne Links", "[Startseite](../index.html), " + related),
+("Interne Links", "[Startseite](https://www.online-kurse-welt.de/), " + related),
 ])}
 
 ## 6. Schwartz-Analyse
@@ -412,7 +412,7 @@ def html_page(item):
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#eaf7ff">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="canonical" href="https://www.online-kurse-welt.de/{h(item["slug"])}.html">
+  <link rel="canonical" href="https://www.online-kurse-welt.de/{h(item["slug"])}">
   <meta name="description" content="{h(item["description"])}">
   <title>{h(item["title"])}</title>
   <link rel="stylesheet" href="fonts.css">
@@ -423,8 +423,8 @@ def html_page(item):
 </head>
 <body>
   <header class="site-header"><div class="container header-inner">
-    <a class="brand" href="index.html" aria-label="online-kurse-welt.de – Startseite"><svg class="brand-mark" viewBox="0 0 46 36" aria-hidden="true"><path d="M22 5.5C15.7 1.5 8.2 1.1 1 3v27.4c7.3-1.9 14.8-1.5 21 2.5V5.5Z" fill="#27a7ff"/><path d="M24 5.5c6.3-4 13.8-4.4 21-2.5v27.4c-7.3-1.9-14.8-1.5-21 2.5V5.5Z" fill="#27a7ff"/><path d="M23 5v29" stroke="white" stroke-width="1.7"/></svg><span>online-kurse-welt.de</span></a>
-    <nav class="main-nav" aria-label="Hauptnavigation"><a href="index.html#kurse">Produkte entdecken</a><a href="index.html#kategorien">Kategorien</a><a href="index.html">Startseite</a></nav>
+    <a class="brand" href="/" aria-label="online-kurse-welt.de – Startseite"><svg class="brand-mark" viewBox="0 0 46 36" aria-hidden="true"><path d="M22 5.5C15.7 1.5 8.2 1.1 1 3v27.4c7.3-1.9 14.8-1.5 21 2.5V5.5Z" fill="#27a7ff"/><path d="M24 5.5c6.3-4 13.8-4.4 21-2.5v27.4c-7.3-1.9-14.8-1.5-21 2.5V5.5Z" fill="#27a7ff"/><path d="M23 5v29" stroke="white" stroke-width="1.7"/></svg><span>online-kurse-welt.de</span></a>
+    <nav class="main-nav" aria-label="Hauptnavigation"><a href="/#kurse">Produkte entdecken</a><a href="/#kategorien">Kategorien</a><a href="/">Startseite</a></nav>
   </div></header>
   <main>
     <section class="product-hero"><div class="container product-hero-grid">
@@ -436,7 +436,7 @@ def html_page(item):
       <div class="product-visual"><div class="product-cover-missing" role="img" aria-label="{h(item["alt"])}">Produktbild derzeit nicht verfügbar</div></div>
     </div></section>
     <div class="container product-content">
-      <nav class="breadcrumbs" aria-label="Brotkrumennavigation"><a href="index.html">Startseite</a> / {name}</nav>
+      <nav class="breadcrumbs" aria-label="Brotkrumennavigation"><a href="/">Startseite</a> / {name}</nav>
       <section><h2>Worum es geht</h2><p>{h(item["problem"])}</p></section>
       <section><h2>So funktioniert es laut Anbieter</h2><ol class="product-steps">{steps}</ol></section>
       <section><h2>Das ist laut Anbieter enthalten</h2><ul class="check-list">{bullets(item["facts"])}</ul><p class="source-note">Quelle: <a href="{h(item["source"])}" rel="noopener" target="_blank">Verkaufs- und Bestellseite</a>, abgerufen am {CHECKED}. Die Angaben sind nicht selbst getestet.</p></section>
@@ -450,16 +450,12 @@ def html_page(item):
     </div>
   </main>
   <div class="closing-line">Wissen entdecken. Möglichkeiten erweitern.</div>
-  <footer class="site-footer"><div class="container footer-inner"><a class="brand brand-footer" href="index.html" aria-label="online-kurse-welt.de – Startseite"><svg class="brand-mark" viewBox="0 0 46 36" aria-hidden="true"><path d="M22 5.5C15.7 1.5 8.2 1.1 1 3v27.4c7.3-1.9 14.8-1.5 21 2.5V5.5Z" fill="#27a7ff"/><path d="M24 5.5c6.3-4 13.8-4.4 21-2.5v27.4c-7.3-1.9-14.8-1.5-21 2.5V5.5Z" fill="#27a7ff"/><path d="M23 5v29" stroke="white" stroke-width="1.7"/></svg><span>online-kurse-welt.de</span></a><div class="footer-right"><nav aria-label="Footer-Navigation"><a href="index.html">Startseite</a><span aria-hidden="true">·</span><a href="impressum.html">Impressum</a><span aria-hidden="true">·</span><a href="datenschutz.html">Datenschutz</a><span aria-hidden="true">·</span><button class="cookie-settings-button" type="button" data-cookie-settings>Cookie-Einstellungen</button></nav><p class="affiliate-disclaimer"><strong>Werbehinweis:</strong> Diese Website ist eine Affiliate-Seite. Links zu Kursen und Produkten sind Partnerlinks (Werbung). Bei einem Kauf über diese Links erhalten wir eine Provision. Der Preis ändert sich dadurch nicht.</p></div></div></footer>
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand brand-footer" href="/" aria-label="online-kurse-welt.de – Startseite"><svg class="brand-mark" viewBox="0 0 46 36" aria-hidden="true"><path d="M22 5.5C15.7 1.5 8.2 1.1 1 3v27.4c7.3-1.9 14.8-1.5 21 2.5V5.5Z" fill="#27a7ff"/><path d="M24 5.5c6.3-4 13.8-4.4 21-2.5v27.4c-7.3-1.9-14.8-1.5-21 2.5V5.5Z" fill="#27a7ff"/><path d="M23 5v29" stroke="white" stroke-width="1.7"/></svg><span>online-kurse-welt.de</span></a><div class="footer-right"><nav aria-label="Footer-Navigation"><a href="/">Startseite</a><span aria-hidden="true">·</span><a href="/impressum">Impressum</a><span aria-hidden="true">·</span><a href="/datenschutz">Datenschutz</a><span aria-hidden="true">·</span><button class="cookie-settings-button" type="button" data-cookie-settings>Cookie-Einstellungen</button></nav><p class="affiliate-disclaimer"><strong>Werbehinweis:</strong> Diese Website ist eine Affiliate-Seite. Links zu Kursen und Produkten sind Partnerlinks (Werbung). Bei einem Kauf über diese Links erhalten wir eine Provision. Der Preis ändert sich dadurch nicht.</p></div></div></footer>
 </body></html>
 '''
 
 
 def main():
-    folder = ROOT / "produkt-briefings"
-    folder.mkdir(exist_ok=True)
-    for item in PRODUCTS:
-        (folder / f"{item['slug']}.md").write_text(brief(item), encoding="utf-8")
     for item in PRODUCTS:
         (ROOT / f"{item['slug']}.html").write_text(html_page(item), encoding="utf-8")
 

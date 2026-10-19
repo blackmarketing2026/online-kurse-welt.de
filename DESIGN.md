@@ -58,7 +58,7 @@ Die CSS-Variablen in `styles.css` sind die technische Quelle für die Grundfarbe
 - Der Inhalt folgt der Reihenfolge aus `SEO-Produktseite-Briefing-Vorlage.md`: Worum es geht, Ablauf, belegter Umfang, Preis und Konditionen, Eignung, eigener Kauf-Check, Grenzen, FAQ und Abschluss-CTA. Anbieterangaben bleiben von redaktioneller Einordnung getrennt.
 - Produktbilder werden nur bei nachgewiesenem Nutzungsrecht gezeigt. Andernfalls erscheint ein ruhiger Textplatzhalter; generische Anbieter-Platzhalter und irreführende Buch-Mockups bleiben weg.
 - Die Startseite zeigt aktuelle Produkte als weiße Karten mit freigegebenem Cover oder Textfläche. Jede Karte trägt sichtbar „Werbung“ und führt zur internen Produktseite.
-- Die statischen Produktseiten werden aus `generate_product_pages.py` erzeugt; zu jeder gehört ein ausgefülltes Briefing unter `produkt-briefings/`.
+- Die statischen Produktseiten werden aus `generate_product_pages.py` erzeugt. Interne Links, Canonicals und die Sitemap verwenden die URLs ohne `.html`; Vercel liefert die HTML-Dateien über diese URLs aus.
 
 ## Footer
 
