@@ -24,11 +24,11 @@ Dieses Dokument beschreibt die Gestaltung der Startseite und der allgemeinen Sei
 | Linienblau | `#d7e7f4` | Karten- und Feldränder |
 | Weiß | `#ffffff` | Seitenhintergrund und Karten |
 
-Die CSS-Variablen in `styles.css` sind die technische Quelle für die Grundfarben der Startseite und allgemeinen Seiten. Produkt-Landingpages dürfen eigene Farb- und Schriftkonzepte verwenden.
+Die CSS-Variablen in `styles.css` sind die technische Quelle für die Grundfarben der Startseite und allgemeinen Seiten. Affiliate-Landingpages verwenden jeweils ein eigenes Farb- und Schriftkonzept.
 
 ## Schrift und Abstände
 
-- Schriftfamilie für allgemeine Seiten: lokal eingebundenes `Inter`, ersatzweise `Arial, sans-serif`. Produkt-Landingpages dürfen eine eigene Typografie wählen; Schriften werden lokal eingebunden.
+- Schriftfamilie für allgemeine Seiten: lokal eingebundenes `Inter`, ersatzweise `Arial, sans-serif`. Affiliate-Landingpages wählen eine eigene, zum Produkt passende Typografie; Schriften werden lokal eingebunden.
 - Fließtext: 16 px auf Desktop; dunkelblau oder gedämpftes Blau, gut lesbare Zeilenhöhe.
 - Überschriften: kräftig (`font-weight: 800`), dunkelblau, mit enger Laufweite. Die Startseite nutzt etwa 52 px für die Hero-Überschrift und 30 px für Abschnittsüberschriften; mobil etwa 36 px und 25 px.
 - Maximalbreite des Inhalts: 1162 px. Auf Desktop mindestens 24 px Seitenabstand, mobil 16 px und höchstens 440 px Inhaltsbreite.
@@ -54,9 +54,8 @@ Die CSS-Variablen in `styles.css` sind die technische Quelle für die Grundfarbe
 
 ### Produkt-Landingpages
 
-- **Jede neue Landingpage erhält ein eigenes Design, das zu Produkt, Zielgruppe und Angebot passt.** Farben, Typografie, Bildsprache, Hero, Karten, Abschnittsfolge und CTA-Gestaltung werden dafür neu entwickelt. Die Startseite und frühere Produktseiten sind keine Gestaltungsvorlage.
-- Bei einer ausdrücklichen, späteren Einzelanweisung kann eine Produktseite das bestehende Website-Design verwenden. Für das kostenlose KI-Training von Business-Kickstart ist diese Ausnahme gewünscht; die allgemeinen Seiten und die Startseite werden dabei nicht neu gestaltet.
-- Landingpages dürfen eine eigene CSS-Datei verwenden und müssen `styles.css` nicht laden. Eine klare Seitenstruktur, gute Lesbarkeit, mobile Bedienbarkeit, sichtbare Tastaturfokusse und erreichbare Rechtsseiten bleiben Pflicht.
+- **Jede neu erstellte oder gestalterisch überarbeitete Affiliate-Landingpage erhält ein vollständig eigenes Design, das zu Produkt, Zielgruppe und Angebot passt.** Farben, Typografie, Bildsprache, Hero, Karten, Abschnittsfolge und CTA-Gestaltung werden dafür neu entwickelt. Die Startseite, die frühere FunnelCockpit-Seite und die KI-Training-Seite sind keine Gestaltungsvorlagen.
+- Jede Affiliate-Landingpage verwendet eine eigene CSS-Datei und lädt `styles.css` nicht als visuelle Basis. Technische Konventionen wie saubere URLs, Einwilligung und erreichbare Rechtsseiten bleiben erhalten. Eine klare Seitenstruktur, gute Lesbarkeit, mobile Bedienbarkeit und sichtbare Tastaturfokusse sind Pflicht.
 - Produktinformationen werden mit Quellen belegt. Preis, Vertragsmodell, Eignung, Grenzen, FAQ und ein eigener Kauf-Check sind sinnvoll, aber ihre Reihenfolge und visuelle Form richten sich nach dem jeweiligen Produkt. Anbieterangaben bleiben von redaktioneller Einordnung getrennt.
 - Produktbilder und Markenmaterial von der offiziellen Landingpage dürfen lokal importiert und passend eingesetzt werden. Quelle und Nutzungsrecht beziehungsweise Freigabe für die Partnerwerbung werden geprüft und dokumentiert; Bilder erhalten aussagekräftige Alternativtexte. Wenn kein verwendbares Bild vorliegt, wird ein eigenes grafisches Element gestaltet.
 - Partnerlinks und werbliche Bereiche werden direkt sichtbar als „Werbung“ oder „Anzeige“ gekennzeichnet. Preis- und Leistungsversprechen werden nicht erfunden.
