@@ -4,7 +4,7 @@ Diese Vorlage wird **vor jeder neuen Produktseite einmal vollständig ausgefüll
 
 Die Landingpage folgt **AIDA**: Attention, Interest, Desire, Action. Die Methode von **Eugene M. Schwartz** („Breakthrough Advertising“) hilft innerhalb dieser Struktur bei Blickwinkel und Formulierung: Wir greifen einen bereits vorhandenen Wunsch der Zielgruppe auf. **Weder AIDA noch Schwartz bestimmen die Fakten.** Jede Aussage muss belegt sein. Keine erfundenen Ergebnisse, Bewertungen, Knappheit oder Garantien.
 
-**Ablauf:** 1. Fakten sammeln → 2. Preis und Link prüfen → 3. Suchintention klären → 4. Schwartz-Analyse → 5. AIDA-Struktur und Produktbild planen → 6. Seitentexte schreiben → 7. FAQ → 8. Freigabe-Check.
+**Ablauf:** 1. Fakten sammeln → 2. Preis und Link prüfen → 3. Suchintention klären → 4. Schwartz-Analyse → 5. AIDA-Struktur, Produktbilder und Video/VSL planen → 6. Seitentexte schreiben → 7. FAQ → 8. Freigabe-Check.
 
 ---
 
@@ -148,7 +148,7 @@ Die Stufe bestimmt den Einstieg. Bei Suchtraffic meist Stufe 3 oder 4.
 | Title-Tag (max. ca. 60 Zeichen) | [eintragen] |
 | Meta-Description (max. ca. 155 Zeichen, mit Preis-/Nutzenhinweis) | [eintragen] |
 
-## 7. Produktbild
+## 7. Produktbilder und Video/VSL
 
 Auch das Bild folgt Schwartz: Es zeigt **das Produkt im Zusammenhang mit dem Wunsch**, nicht nur eine Datei.
 
@@ -163,6 +163,21 @@ Auch das Bild folgt Schwartz: Es zeigt **das Produkt im Zusammenhang mit dem Wun
 
 **Nicht erlaubt:** Mockups, die Inhalte, Formate oder Ergebnisse zeigen, die es nicht gibt (z. B. ein gedrucktes Buch bei einem reinen E-Book), erfundene Personen mit Erfolgsergebnis, Sterne oder Siegel.
 
+### Video Sales Letter (VSL) und weitere Videos
+
+Prüfe die verlinkte Anbieter-Seite und offizielle Partner-Werbemittel auf passendes Videomaterial. Ist eine VSL vorhanden, plane auf der Landingpage einen sichtbaren Videobereich mit Vorschaubild oder Play-Element und einem Link zur offiziellen VSL. Wenn der vom Nutzer bereitgestellte Affiliate-Link direkt zur Seite mit der VSL führt, ist genau dieser unveränderte Link zugleich das Video-Ziel. Eine separate offizielle VSL-URL darf als Video-Link dienen; die primären Kauf-CTAs behalten den bereitgestellten Affiliate-Link. Eine bloß vermutete VSL wird nicht als vorhanden dargestellt.
+
+| Angabe | Eintrag |
+|---|---|
+| VSL vorhanden und erreichbar? | Ja / Nein / nicht verifiziert; Prüftag |
+| Offizielle VSL- oder Angebots-URL | [vollständige URL] |
+| Ziel des Video-Links | [unveränderter Affiliate-Link oder separate offizielle VSL-URL] |
+| Vorschaubild / weitere Videos | [Quelle, Produktbezug, Alt-Text beziehungsweise Beschriftung] |
+| Recht zur Übernahme/Einbettung geklärt? | [Nachweis oder nur externer Video-Link] |
+| Drittanbieter-Player und Einwilligung | [nicht eingebettet / geprüfter Dienst, Lade-Sperre und Datenschutzhinweis] |
+
+Video-Dateien ohne geklärte Nutzungserlaubnis nicht herunterladen oder selbst hosten. Einen externen Player nur nach Prüfung der Einbettungserlaubnis, Einwilligung und Datenschutzerklärung laden; sonst den Video-Link nutzen. Das Video als Anbieterinhalt kennzeichnen und darin gezeigte Ergebnisse nicht als eigene Prüfung darstellen. Videoquelle, Ziel-URL, Prüfdatum und Nutzungsgrundlage in `BILDQUELLEN.md` dokumentieren. Ist die externe Seite durch HTTP 429 oder Bot-Schutz nicht prüfbar, dies als „nicht verifiziert“ festhalten.
+
 ## 8. Seitenaufbau
 
 Die vier AIDA-Phasen bilden die Leserführung. Die Tabelle zeigt eine sinnvolle Standardreihenfolge; einzelne Informationsblöcke dürfen zum Produkt passend angeordnet werden, solange alle vier Phasen erkennbar bleiben. Schwartz bestimmt den Blickwinkel innerhalb der Phasen. Gestaltung nach [DESIGN.md](DESIGN.md).
@@ -174,6 +189,7 @@ Die vier AIDA-Phasen bilden die Leserführung. Die Tabelle zeigt eine sinnvolle 
 | 3 | **Worum es geht** | Ausgangslage des Lesers und Hindernis, 2–4 Sätze | **Interest:** Relevanz und Produktart erklären |
 | 4 | **So funktioniert es** | Ablauf bzw. Aufbau des Produkts in Schritten | **Interest:** Funktionsweise verständlich machen |
 | 5 | **Das ist laut Anbieter enthalten** | Liste des Leistungsumfangs, Quelle mit Abrufdatum | **Interest:** belegte Details zeigen |
+| 5a | **Video/VSL**, falls vorhanden | Sichtbarer Videobereich mit Link zur offiziellen VSL, Quellen- und Werbehinweis; bei separater VSL-URL bleiben Kauf-CTAs auf dem freigegebenen Affiliate-Link | **Interest:** Anbietererklärung zugänglich machen, ohne Ergebnisse zu übernehmen |
 | 6 | **Preis und Konditionen** | Preis, Endbetrag, Zahlungsmodell, Zusatzkosten, Rückgabe, Prüftag | **Desire:** Nutzen und Kosten ehrlich abwägen |
 | 7 | **Für wen passt es – und für wen nicht** | zwei kurze Listen | **Desire:** Eignung und Grenzen konkretisieren |
 | 8 | **Unser Kauf-Check** | eigener Mehrwert: Prüffragen oder Test | **Desire:** Entscheidung mit Belegen unterstützen |
@@ -226,6 +242,8 @@ Umsetzung: Frage als `h3`, Antwort als `p`. Strukturierte Daten (`FAQPage`) sind
 - [ ] Attention, Interest, Desire und Action sind in dieser Reihenfolge erkennbar; Nutzen und Dringlichkeit gehen nicht über die Belege hinaus.
 - [ ] Keine Aussage geht über die Belege hinaus.
 - [ ] Produktbild mit geklärtem Nutzungsrecht und Alt-Text – oder Platzhalter.
+- [ ] Verfügbare Anbieterbilder und Videos geprüft; vorhandene VSL als sichtbarer Video-Link eingebaut, Ziel und Nutzungsgrundlage in `BILDQUELLEN.md` dokumentiert.
+- [ ] Bei eingebettetem Drittanbieter-Player Einbettungserlaubnis, Einwilligungssperre und Datenschutzerklärung geprüft; sonst externer Video-Link ohne automatisches Laden.
 - [ ] Preis steht im Hero, im Abschnitt „Preis und Konditionen“ und in der FAQ.
 - [ ] FAQ mit allen Pflichtfragen am Seitenende.
 - [ ] Jeder Partnerlink: `rel="sponsored noopener"`, sichtbar „Werbung“.
@@ -268,6 +286,7 @@ Attention / Interest / Desire / Action (je ein belegter Kernpunkt):
 Title / Meta-Description:
 
 Produktbild (Quelle, Recht, Alt-Text):
+VSL/Video (vorhanden, Video-Link, Vorschaubild, Rechte, Einwilligung, Prüfdatum):
 FAQ (Pflichtfragen + Zusatzfragen):
 Interne Links:
 Freigabe durch:

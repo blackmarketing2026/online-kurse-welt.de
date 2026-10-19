@@ -1,6 +1,6 @@
 # Bildquellen und Nutzung auf Produkt-Landingpages
 
-Stand: 19. Oktober 2026. Für jedes importierte Anbieterbild werden Datei, Original-URL, Produktbezug und Grundlage der Nutzung für Partnerwerbung festgehalten. Die Berechtigung gilt nicht pauschal für fremde Testimonials, Fotos oder andere Produkte.
+Stand: 19. Oktober 2026. Für jedes importierte Anbieterbild werden Datei, Original-URL, Produktbezug und Grundlage der Nutzung für Partnerwerbung festgehalten. Bei Videos und VSLs werden zusätzlich die offizielle Video- oder Angebots-URL, das Ziel des Video-Links, Vorschaubild, Prüfdatum, Nutzungsgrundlage und gegebenenfalls Player-/Einwilligungsprüfung dokumentiert. Die Berechtigung gilt nicht pauschal für fremde Testimonials, Fotos, Videos oder andere Produkte. Ist eine VSL wegen HTTP 429 oder Bot-Schutz nicht überprüfbar, wird der Status „nicht verifiziert“ vermerkt.
 
 ## Internet Geld Geheimnis
 
