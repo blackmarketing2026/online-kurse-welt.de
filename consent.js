@@ -118,7 +118,7 @@
     ? '<p>Diese optionalen Dienste sind vorbereitet, derzeit aber noch nicht aktiv. Bei ihrer Aktivierung fragen wir Ihre Auswahl erneut ab.</p>' : '';
   panel.innerHTML = `
     <div class="consent-heading"><h2 id="consent-title">Datenschutz-Einstellungen</h2></div>
-    <p>Wir möchten mit optionalen Diensten die Nutzung dieser Website auswerten und Werbung messen. Diese Dienste laden erst nach Ihrer Einwilligung. Sie können einzeln wählen oder alles ablehnen. <a href="datenschutz.html">Mehr in der Datenschutzerklärung</a>.</p>
+    <p>Wir möchten mit optionalen Diensten die Nutzung dieser Website auswerten und Werbung messen. Diese Dienste laden erst nach Ihrer Einwilligung. Sie können einzeln wählen oder alles ablehnen. <a href="/datenschutz">Mehr in der Datenschutzerklärung</a>.</p>
     ${inactiveNote}
     <div class="consent-services" role="group" aria-label="Optionale Dienste">
       <label class="consent-service"><input type="checkbox" data-service="googleAnalytics"><span><strong>Google Analytics</strong><small>Besuche und Nutzung statistisch auswerten · Google Ireland Limited</small></span></label>
