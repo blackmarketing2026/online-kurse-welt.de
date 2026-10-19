@@ -2,9 +2,9 @@
 
 Diese Vorlage wird **vor jeder neuen Produktseite einmal vollständig ausgefüllt** und als eigene Datei unter `produkt-briefings/<seitenpfad>.md` gespeichert. Erst danach wird die HTML-Seite gebaut.
 
-Texte und Produktbild folgen der Methode von **Eugene M. Schwartz** („Breakthrough Advertising“): Wir erzeugen keinen Wunsch, sondern greifen einen bereits vorhandenen Wunsch der Zielgruppe auf und lenken ihn auf das Produkt. Dabei gilt immer: **Schwartz bestimmt Reihenfolge, Blickwinkel und Formulierung, aber niemals die Fakten.** Jede Aussage muss belegt sein. Keine erfundenen Ergebnisse, Bewertungen, Knappheit oder Garantien.
+Die Landingpage folgt **AIDA**: Attention, Interest, Desire, Action. Die Methode von **Eugene M. Schwartz** („Breakthrough Advertising“) hilft innerhalb dieser Struktur bei Blickwinkel und Formulierung: Wir greifen einen bereits vorhandenen Wunsch der Zielgruppe auf. **Weder AIDA noch Schwartz bestimmen die Fakten.** Jede Aussage muss belegt sein. Keine erfundenen Ergebnisse, Bewertungen, Knappheit oder Garantien.
 
-**Ablauf:** 1. Fakten sammeln → 2. Preis und Link mit Campaign Key festlegen → 3. Suchintention klären → 4. Schwartz-Analyse → 5. Produktbild planen → 6. Seitentexte nach dem Seitenaufbau schreiben → 7. FAQ → 8. Freigabe-Check.
+**Ablauf:** 1. Fakten sammeln → 2. Preis und Link prüfen → 3. Suchintention klären → 4. Schwartz-Analyse → 5. AIDA-Struktur und Produktbild planen → 6. Seitentexte schreiben → 7. FAQ → 8. Freigabe-Check.
 
 ---
 
@@ -165,22 +165,24 @@ Auch das Bild folgt Schwartz: Es zeigt **das Produkt im Zusammenhang mit dem Wun
 
 ## 8. Seitenaufbau
 
-Die Reihenfolge ist fest. Die Spalte „Aufgabe nach Schwartz“ bestimmt den Ton des Abschnitts. Gestaltung nach [DESIGN.md](DESIGN.md).
+Die vier AIDA-Phasen bilden die Leserführung. Die Tabelle zeigt eine sinnvolle Standardreihenfolge; einzelne Informationsblöcke dürfen zum Produkt passend angeordnet werden, solange alle vier Phasen erkennbar bleiben. Schwartz bestimmt den Blickwinkel innerhalb der Phasen. Gestaltung nach [DESIGN.md](DESIGN.md).
 
-| # | Abschnitt | Inhalt | Aufgabe nach Schwartz |
+| # | Abschnitt | Inhalt | AIDA-Aufgabe |
 |---|---|---|---|
-| 1 | **Hero** | Eyebrow „Kategorie · Werbung“, H1, Lead, Meta-Zeile („Redaktion: online-kurse-welt.de · Anbieterangaben geprüft am … · Selbst getestet / Nicht selbst getestet“), **Preisbox** mit Prüftag, Button mit Partnerlink inkl. Campaign Key, Werbehinweis, Produktbild | Wunsch aufgreifen, Einstieg passend zur Bewusstseinsstufe |
+| 1 | **Hero** | Eyebrow „Kategorie · Werbung“, H1, Lead, Meta-Zeile („Redaktion: online-kurse-welt.de · Anbieterangaben geprüft am … · Selbst getestet / Nicht selbst getestet“), **Preisbox** mit Prüftag, Button mit dem unveränderten Partnerlink, Werbehinweis, Produktbild | **Attention:** Suchintention und vorhandenen Wunsch wahrheitsgemäß aufgreifen |
 | 2 | Brotkrumen | Startseite / Produktname | – |
-| 3 | **Worum es geht** | Ausgangslage des Lesers und Hindernis, 2–4 Sätze | Identifikation |
-| 4 | **So funktioniert es** | Ablauf bzw. Aufbau des Produkts in Schritten | Mechanismus |
-| 5 | **Das ist laut Anbieter enthalten** | Liste des Leistungsumfangs, Quelle mit Abrufdatum | Steigerung durch belegte Details |
-| 6 | **Preis und Konditionen** | Preis, Endbetrag, Zahlungsmodell, Zusatzkosten, Rückgabe, Prüftag | Vertrauen durch Klarheit |
-| 7 | **Für wen passt es – und für wen nicht** | zwei kurze Listen | Identifikation und ehrliche Auswahl |
-| 8 | **Unser Kauf-Check** | eigener Mehrwert: Prüffragen oder Test | Beleg |
-| 9 | **Grenzen und offene Fragen** | was nicht belegt oder nicht getestet ist | Glaubwürdigkeit |
-| 10 | **Häufige Fragen** | FAQ, siehe Abschnitt 9 | Einwände beantworten |
-| 11 | **Abschluss-CTA** | ein Satz Nutzen + Aufforderung zur eigenen Prüfung, Button mit gleichem Partnerlink, „Werbung · Partnerlink“ | Handlung |
+| 3 | **Worum es geht** | Ausgangslage des Lesers und Hindernis, 2–4 Sätze | **Interest:** Relevanz und Produktart erklären |
+| 4 | **So funktioniert es** | Ablauf bzw. Aufbau des Produkts in Schritten | **Interest:** Funktionsweise verständlich machen |
+| 5 | **Das ist laut Anbieter enthalten** | Liste des Leistungsumfangs, Quelle mit Abrufdatum | **Interest:** belegte Details zeigen |
+| 6 | **Preis und Konditionen** | Preis, Endbetrag, Zahlungsmodell, Zusatzkosten, Rückgabe, Prüftag | **Desire:** Nutzen und Kosten ehrlich abwägen |
+| 7 | **Für wen passt es – und für wen nicht** | zwei kurze Listen | **Desire:** Eignung und Grenzen konkretisieren |
+| 8 | **Unser Kauf-Check** | eigener Mehrwert: Prüffragen oder Test | **Desire:** Entscheidung mit Belegen unterstützen |
+| 9 | **Grenzen und offene Fragen** | was nicht belegt oder nicht getestet ist | **Desire:** Unsicherheit transparent machen |
+| 10 | **Häufige Fragen** | FAQ, siehe Abschnitt 9 | **Desire:** entscheidungsrelevante Fragen beantworten |
+| 11 | **Abschluss-CTA** | Aufforderung zur eigenen Prüfung, Button „Jetzt zum Online-Kurs“ oder „Jetzt zum Online-Produkt“ mit demselben unveränderten Partnerlink, „Werbung · Partnerlink“ | **Action:** klar zum Anbieter führen |
 | 12 | Weitere Seiten | 1–3 interne Links | – |
+
+**CTA-Regel:** Bei einem tatsächlich belegten Online-Kurs lautet der Text jedes primären Affiliate-Buttons exakt **„Jetzt zum Online-Kurs“**; bei einem anderen Online-Produkt exakt **„Jetzt zum Online-Produkt“**. Bei unklarem Format zunächst recherchieren. Die Werbekennzeichnung steht direkt am Button. Der zugängliche Linkname nennt zusätzlich Produkt, Anbieterziel und gegebenenfalls das Öffnen in einem neuen Tab. Sekundäre interne Navigationslinks dürfen beschreibende Texte tragen.
 
 **Stil:** Du-Form wie auf der Startseite, kurze Sätze, aktive Verben, konkrete Bilder statt Superlative. Jeder Absatz beantwortet eine Frage, die der Leser an dieser Stelle hat.
 
@@ -221,11 +223,13 @@ Umsetzung: Frage als `h3`, Antwort als `p`. Strukturierte Daten (`FAQPage`) sind
 - [ ] Alle Fakten in Abschnitt 2 und 3 haben eine Quelle mit Datum.
 - [ ] Campaign Key vergeben, Link getestet, in `Digistore24.md` bzw. `Produktliste.md` eingetragen.
 - [ ] H1, Lead und Abschnitte folgen der gewählten Bewusstseinsstufe und Marktreife.
+- [ ] Attention, Interest, Desire und Action sind in dieser Reihenfolge erkennbar; Nutzen und Dringlichkeit gehen nicht über die Belege hinaus.
 - [ ] Keine Aussage geht über die Belege hinaus.
 - [ ] Produktbild mit geklärtem Nutzungsrecht und Alt-Text – oder Platzhalter.
 - [ ] Preis steht im Hero, im Abschnitt „Preis und Konditionen“ und in der FAQ.
 - [ ] FAQ mit allen Pflichtfragen am Seitenende.
 - [ ] Jeder Partnerlink: `rel="sponsored noopener"`, sichtbar „Werbung“.
+- [ ] Alle primären Affiliate-Buttons verwenden passend zum belegten Format exakt „Jetzt zum Online-Kurs“ oder „Jetzt zum Online-Produkt“ und den unveränderten Partnerlink.
 - [ ] Seite in `sitemap.xml` eingetragen, Status in `Produktliste.md` auf ✅ gesetzt.
 - [ ] Datenschutzerklärung nennt das Partnerprogramm.
 - [ ] Desktop- und Mobilansicht geprüft.
@@ -260,6 +264,7 @@ Marktreife (1–5):
 Mechanismus:
 Identifikationssatz:
 H1 / Lead:
+Attention / Interest / Desire / Action (je ein belegter Kernpunkt):
 Title / Meta-Description:
 
 Produktbild (Quelle, Recht, Alt-Text):
