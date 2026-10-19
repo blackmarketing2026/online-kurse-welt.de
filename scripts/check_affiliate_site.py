@@ -3,7 +3,8 @@
 import argparse
 from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import unquote, urlparse
+import re
+from urllib.parse import unquote, urlparse, urlsplit
 import xml.etree.ElementTree as ET
 
 
@@ -78,12 +79,33 @@ def parse_page(path):
     return page
 
 
-def check(page_file, affiliate_link):
+def valid_https_url(url):
+    """Check syntax without normalizing the user-provided URL."""
+    if not url or any(char.isspace() or ord(char) < 32 for char in url):
+        return False
+    if re.search(r"%(?![0-9A-Fa-f]{2})", url) or any(char in url for char in '<>"\\'):
+        return False
+    try:
+        parsed = urlsplit(url)
+        return (
+            parsed.scheme == "https"
+            and bool(parsed.netloc and parsed.hostname)
+            and parsed.username is None
+            and parsed.password is None
+            and parsed.port != 0
+        )
+    except ValueError:
+        return False
+
+
+def check(page_file, affiliate_link, product_url=None):
     errors = []
     if not page_file.is_file() or page_file.suffix != ".html" or page_file.parent != ROOT:
         return ["Produktseite muss eine vorhandene HTML-Datei im Projektwurzelverzeichnis sein."]
-    if urlparse(affiliate_link).scheme != "https":
-        errors.append("Affiliate-Link muss eine HTTPS-URL sein.")
+    if not valid_https_url(affiliate_link):
+        errors.append("Affiliate-Link ist keine gültige HTTPS-URL.")
+    if product_url is not None and not valid_https_url(product_url):
+        errors.append("Produkt-URL ist keine gültige HTTPS-URL.")
 
     slug = page_file.stem
     clean_url = f"https://{DOMAIN}/{slug}"
@@ -115,8 +137,13 @@ def check(page_file, affiliate_link):
     for a in affiliates:
         if "sponsored" not in a.get("rel", "").split():
             errors.append("Affiliate-Link ohne rel=sponsored.")
+        if not any(label in a.get("aria-label", "").lower() for label in ("werbung", "anzeige")):
+            errors.append("Affiliate-Link ohne Werbekennzeichnung im zugänglichen Linknamen.")
         if a.get("target") == "_blank" and "noopener" not in a.get("rel", "").split():
             errors.append("Affiliate-Link mit target=_blank ohne rel=noopener.")
+    for a in product.links:
+        if "sponsored" in a.get("rel", "").split() and a.get("href") != affiliate_link:
+            errors.append(f"Anderer Partnerlink als der freigegebene Link: {a.get('href', '')}")
 
     if not any(a.get("href") == f"/{slug}" for a in home.links):
         errors.append("Interner Produktlink auf der Startseite fehlt.")
@@ -149,9 +176,10 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--page", required=True, help="Dateiname der Produktseite, z. B. funnel-cockpit.html")
     parser.add_argument("--affiliate-link", required=True, help="Exakter Affiliate-Link des Auftrags")
+    parser.add_argument("--product-url", help="Optionale Produkt-URL für die Syntaxprüfung")
     args = parser.parse_args()
     page_file = (ROOT / args.page).resolve()
-    errors = check(page_file, args.affiliate_link)
+    errors = check(page_file, args.affiliate_link, args.product_url)
     if errors:
         for error in errors:
             print(f"FEHLER: {error}")

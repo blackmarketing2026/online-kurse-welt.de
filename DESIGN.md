@@ -55,6 +55,7 @@ Die CSS-Variablen in `styles.css` sind die technische Quelle für die Grundfarbe
 ### Produkt-Landingpages
 
 - **Jede neue Landingpage erhält ein eigenes Design, das zu Produkt, Zielgruppe und Angebot passt.** Farben, Typografie, Bildsprache, Hero, Karten, Abschnittsfolge und CTA-Gestaltung werden dafür neu entwickelt. Die Startseite und frühere Produktseiten sind keine Gestaltungsvorlage.
+- Bei einer ausdrücklichen, späteren Einzelanweisung kann eine Produktseite das bestehende Website-Design verwenden. Für das kostenlose KI-Training von Business-Kickstart ist diese Ausnahme gewünscht; die allgemeinen Seiten und die Startseite werden dabei nicht neu gestaltet.
 - Landingpages dürfen eine eigene CSS-Datei verwenden und müssen `styles.css` nicht laden. Eine klare Seitenstruktur, gute Lesbarkeit, mobile Bedienbarkeit, sichtbare Tastaturfokusse und erreichbare Rechtsseiten bleiben Pflicht.
 - Produktinformationen werden mit Quellen belegt. Preis, Vertragsmodell, Eignung, Grenzen, FAQ und ein eigener Kauf-Check sind sinnvoll, aber ihre Reihenfolge und visuelle Form richten sich nach dem jeweiligen Produkt. Anbieterangaben bleiben von redaktioneller Einordnung getrennt.
 - Produktbilder und Markenmaterial von der offiziellen Landingpage dürfen lokal importiert und passend eingesetzt werden. Quelle und Nutzungsrecht beziehungsweise Freigabe für die Partnerwerbung werden geprüft und dokumentiert; Bilder erhalten aussagekräftige Alternativtexte. Wenn kein verwendbares Bild vorliegt, wird ein eigenes grafisches Element gestaltet.
