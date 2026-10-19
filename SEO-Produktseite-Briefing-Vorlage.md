@@ -230,7 +230,7 @@ Umsetzung: Frage als `h3`, Antwort als `p`. Strukturierte Daten (`FAQPage`) sind
 - **Werbekennzeichnung:** „Werbung“ im Eyebrow und direkt bei jedem Partnerlink; zusätzlich der Werbehinweis im Footer. Partnerlinks mit `rel="sponsored"`: [Google zu bezahlten Links](https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links).
 - **Preis mit Prüftag** und Hinweis, dass der Preis im Bestellschritt maßgeblich ist.
 - **Autorschaft und Prüfstatus** in der Meta-Zeile, inklusive „Nicht selbst getestet“, falls zutreffend: [Google zu hilfreichen Inhalten](https://developers.google.com/search/docs/fundamentals/creating-helpful-content).
-- **Quellen** für Leistungsumfang mit Abrufdatum.
+- **Quellen** für den Leistungsumfang mit Abrufdatum intern dokumentieren und im Abschlussbericht nennen; keinen gesonderten öffentlichen Abschnitt „Quellen & Prüfstand“ oder ähnlichen Prüfprotokoll-Block auf der Landingpage anlegen. Wesentliche Einschränkungen direkt bei den betreffenden Aussagen erklären.
 - **Strukturierte Daten** nur für sichtbare, belegte Angaben. Keine Merchant-Listing-Auszeichnung, da der Kauf extern stattfindet: [Google zu Merchant Listings](https://developers.google.com/search/docs/appearance/structured-data/merchant-listing).
 - **Keine erfundenen Bewertungen**, Sterne, Testimonials, Erfolgszahlen oder Knappheit.
 
