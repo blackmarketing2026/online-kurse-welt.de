@@ -14,7 +14,7 @@ Texte und Produktbild folgen der Methode von **Eugene M. Schwartz** („Breakthr
 |---|---|
 | Produktname (exakt wie beim Anbieter) | [eintragen] |
 | Anbieter / Verkäufer | [eintragen] |
-| Seitenpfad (Kleinbuchstaben, Bindestriche, Hauptkeyword) | `[kurzname].html` |
+| Seitenpfad (Kleinbuchstaben, Bindestriche, Hauptkeyword) | `/[kurzname]` (Datei intern: `[kurzname].html`) |
 | Kategorie auf der Website | Business & Marketing · Persönliche Entwicklung · Gesundheit & Fitness · Kreativität · [andere] |
 | Sprache des Produkts | [eintragen; Quelle] |
 | Status in `Produktliste.md` | ❌ Nicht eingebaut → nach Veröffentlichung ✅ Eingebaut |

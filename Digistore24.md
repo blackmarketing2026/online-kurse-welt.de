@@ -41,6 +41,7 @@ Nur Digistore24-Produkte (Links über `checkout-ds24.com`). Die übrigen Produkt
 |---|---|---|---|
 | Wandern auf Teneriffa mit Kindern für Anfänger | 743903 | `okw-teneriffa-wandern` | `https://www.checkout-ds24.com/redir/743903/mysticmarketing/okw-teneriffa-wandern` |
 | Bali Reiseführer | 743944 | `okw-bali-reisefuehrer` | `https://www.checkout-ds24.com/redir/743944/mysticmarketing/okw-bali-reisefuehrer` |
+| FunnelCockpit | 98201 | `okw-funnel-cockpit` | `https://www.digistore24.com/redir/98201/mysticmarketing/okw-funnel-cockpit` |
 
 ## Quellen
 
